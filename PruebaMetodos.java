@@ -12,7 +12,7 @@ public class PruebaMetodos {
 
     // Método retirar
     miCuenta.retirar(100); // Se retiran 100
-    System.out.println(miCuenta.saldo);
+    System.out.println(miCuenta.obtenerSaldo());
 
     // Se define una Segunda Cuenta para las interacciones:
     Cuenta cuentaDeVale = new Cuenta();

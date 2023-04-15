@@ -1,9 +1,12 @@
 class Cuenta {
   // Atributos:
-  double saldo;
+  private double saldo;
   int agencia;
   int numero;
-  String titular;
+  /* Cada que se cree un objeto Cuenta, creará un objeto 
+  cliente por defecto */
+  Cliente titular = new Cliente(); 
+  
 
   // Método para el atributo "saldo"
   public void depositar(double valor) {
@@ -30,6 +33,11 @@ class Cuenta {
     } else {
       return false; // si falla
     }
+  }
+
+  // Método accesible desde cualquier parte del código  
+  public double obtenerSaldo() {
+    return this.saldo;
   }
   
 }
